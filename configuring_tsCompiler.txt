@@ -1,0 +1,10 @@
+Typescript finally compiles the code to js but we have an issue here that is if we are using the tsc without compiling the compiled code is not desirable like.
+1.it will have the older js features like no arrow fx,
+2.var for variable declaration
+3.not optimized code
+4.need to specify the the file to compile every time
+
+So we need the custom configuration to overcome all this issues
+the steps are:
+1. enable the ts config fil-  tsc --init
+2. change the settings in the config file as required
