@@ -8,3 +8,10 @@ So we need the custom configuration to overcome all this issues
 the steps are:
 1. enable the ts config fil-  tsc --init
 2. change the settings in the config file as required
+the following config should be added in json
+1. change the Target to latest es version as per requirement considering the cross browser compatibility
+2.in modules change rootDir to src file by creating it (the file can be custom to store all ts files)
+3. also in modules change outDir to dist file by creating it (again the file can be custom to store all compiled js files is stored)
+(by this config 2&3 now we need not to specify file name while compiling all the files in rootDir is compiled by default and all the compiled files will be stored dist file to use in production)
+4.removeComments should be enabled to remove all the extra comments in ts file by this it will not reflect in compiled js files
+5.noEmitOnError enabling will cause the code is avoided to build if there are any error during compiling
