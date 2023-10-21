@@ -42,7 +42,7 @@
 // enum Size{ Small, Medium, Large };
 // const mySize: Size = Size.Medium;
 // console.log(mySize)
-//? 5 function
+//? 4 function
 function greetings(name:string): void {
   console.log(name)
   // return name;
