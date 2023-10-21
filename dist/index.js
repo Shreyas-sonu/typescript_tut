@@ -1,12 +1,5 @@
 "use strict";
-let age = 20;
-age = 20;
-console.log("hello world");
-let message = "Hello, World!";
-console.log(message);
-let hello = (a, b) => {
-    console.log(a);
-    console.log('hello');
-    console.log(b);
+const greet = (name, age) => {
+    console.log("hello my name is", name, "im", age, "old");
 };
-hello(5, 'Sonu');
+console.log(greet('ranjan', 25));
