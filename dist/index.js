@@ -1,13 +1,8 @@
 "use strict";
-let a;
-a = 10;
-a = 20;
-a = "string bitch";
-console.log(a);
-function render(document) {
-    console.log(document);
-}
-console.log(render("abcd"));
+let person;
+person = ["chandu", 24];
+person.push(2);
+console.log(person);
 const greet = (name, age) => {
     console.log("hello my name is", name, "im", age, "old");
 };
