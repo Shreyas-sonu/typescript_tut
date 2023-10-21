@@ -36,6 +36,13 @@ person[0] = 'wifi';
 person[1] = 143;
 person.push(2) // this is a bug in ts which needs to be solved
 // console.log(person);
+//? 3 enum
+enum Color { Red, Green, Blue };
+console.log(Color.Red) // this is a default zer value but use const to get optimized transpile
+enum Size{ Small, Medium, Large };
+const mySize: Size = Size.Medium;
+console.log(mySize)
+
 //? 2 unknown
 const greet = (name: string, age: unknown) => {
   console.log("hello my name is", name, "im", age, "old");
