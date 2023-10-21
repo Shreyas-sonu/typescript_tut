@@ -28,22 +28,31 @@
 // var a = []; // this is a array of type any  avoid this as below
 // let a: number[] = [];
 
-//? 2 tuple
-let person: [string, number];
-person = ["chandu", 24];
-person[0] = 'wifi';
-// person[0]=1 // syntax error
-person[1] = 143;
-person.push(2) // this is a bug in ts which needs to be solved
-// console.log(person);
-//? 3 enum
-enum Color { Red, Green, Blue };
-console.log(Color.Red) // this is a default zer value but use const to get optimized transpile
-enum Size{ Small, Medium, Large };
-const mySize: Size = Size.Medium;
-console.log(mySize)
-
-//? 2 unknown
+// //? 2 tuple
+// let person: [string, number];
+// person = ["chandu", 24];
+// person[0] = 'wifi';
+// // person[0]=1 // syntax error
+// person[1] = 143;
+// person.push(2) // this is a bug in ts which needs to be solved
+// // console.log(person);
+// //? 3 enum
+// enum Color { Red, Green, Blue };
+// console.log(Color.Red) // this is a default zer value but use const to get optimized transpile
+// enum Size{ Small, Medium, Large };
+// const mySize: Size = Size.Medium;
+// console.log(mySize)
+//? 5 function
+function greetings(name:string): void {
+  console.log(name)
+  // return name;
+} // the void specifies that this function doesn't return anything
+function greetings1(name: string): string {
+  return name;
+}
+const hello=greetings1("sonu");
+console.log(hello);
+//? 4 unknown
 const greet = (name: string, age: unknown) => {
   console.log("hello my name is", name, "im", age, "old");
 };
