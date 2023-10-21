@@ -1,12 +1,10 @@
 "use strict";
-function greetings(name) {
-    console.log(name);
-}
-function greetings1(name) {
-    return name;
-}
-const hello = greetings1("sonu");
-console.log(hello);
+let employee = {
+    id: 1, name: "abhi", retire: (date) => {
+        console.log(date);
+    }
+};
+console.log(employee);
 const greet = (name, age) => {
     console.log("hello my name is", name, "im", age, "old");
 };

@@ -43,15 +43,22 @@
 // const mySize: Size = Size.Medium;
 // console.log(mySize)
 //? 4 function
-function greetings(name:string): void {
-  console.log(name)
-  // return name;
-} // the void specifies that this function doesn't return anything
-function greetings1(name: string): string {
-  return name;
+// function greetings(name:string): void {
+//   console.log(name)
+//   // return name;
+// } // the void specifies that this function doesn't return anything
+// function greetings1(name: string): string {
+//   return name;
+// }
+// const hello=greetings1("sonu");
+// console.log(hello);
+//? 5 Objects
+let employee:{ id:number, name:string, retire:(date: Date) => void}={
+  id: 1, name: "abhi", retire: (date:Date) => {
+  console.log(date)
+  }
 }
-const hello=greetings1("sonu");
-console.log(hello);
+console.log(employee)
 //? 4 unknown
 const greet = (name: string, age: unknown) => {
   console.log("hello my name is", name, "im", age, "old");
