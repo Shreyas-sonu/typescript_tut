@@ -64,3 +64,7 @@ const greet = (name: string, age: unknown) => {
   console.log("hello my name is", name, "im", age, "old");
 };
 console.log(greet("ranjan", 25));
+import { calculate } from "./calculate";
+
+console.log(calculate("3+2 * 6"));
+console.log(calculate("5 + 5 * 6"));
